@@ -1,7 +1,27 @@
+# Introduction:
+- According to the CDC, heart disease is one of the leading causes of death for people of most races in the US (African Americans, American Indians and Alaska Natives, and white people).
+- About half of all Americans (47%) have at least 1 of 3 key risk factors for heart disease: high blood pressure, high cholesterol, and smoking.
+- Other key indicator include diabetic status, obesity (high BMI), not getting enough physical activity or drinking too much alcohol. Detecting and preventing the factors that have the greatest impact on heart disease is very important in healthcare. Computational developments, in turn, allow the application of machine learning methods to detect "patterns" from the data that can predict a patient's condition.
+
+# Objective:
+- The dataset at our disposal contains about 20 predictive variables to a binary target class indicating whether the person suffered from heart disease or not. Our problem statement will be to create a classification model that, given certain features, predicts if the person suffers from heart disease or not.
+
+# Main challenges:
+- The dataset is a good example for imbalanced classification. We primarily have 2 classes but they are not evenly distributed. Only about 9% of instances have heart disease whereas the rest don't. As such, a regular classification technique might not be the best approach.
+
+
+# Proposed solution:
+Step 1 : We will first clean the data
+Step 2 : Perform EDA. This will be targetted towards spotting any insights for feature engineering, detecting outliers, and ways to reduce dimensionality if possible.
+Step 3: Create a solid test harness.
+Step 4: Evaluate a baseline model
+Step 5: Use imabalanced classification technique like SMOTE + TomekLinks to see if we can improve the performance metric.
+
+
 # About Dataset
 
 ## Key Indicators of Heart Disease
-2020 annual CDC survey data of 400k adults related to their health status
+2020 annual CDC survey data of 400k adults related to their health status.
 What topic does the dataset cover?
 According to the CDC, heart disease is one of the leading causes of death for people of most races in the US (African Americans, American Indians and Alaska Natives, and white people). About half of all Americans (47%) have at least 1 of 3 key risk factors for heart disease: high blood pressure, high cholesterol, and smoking. Other key indicator include diabetic status, obesity (high BMI), not getting enough physical activity or drinking too much alcohol. Detecting and preventing the factors that have the greatest impact on heart disease is very important in healthcare. Computational developments, in turn, allow the application of machine learning methods to detect "patterns" from the data that can predict a patient's condition.
 
@@ -31,3 +51,10 @@ As described above, the original dataset of nearly 300 variables was reduced to 
 - Asthma : (Ever told) (you had) asthma?
 - KidneyDisease : Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?
 - SkinCancer : (Ever told) (you had) skin cancer
+
+
+
+# Resources:
+1. [Personal Key Indicators of Heart Diseases](https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease?datasetId=1936563&sortBy=voteCount)
+
+2. [Imbalanced Classification with Python by Jason Brownlee](https://machinelearningmastery.com/imbalanced-classification-with-python/)
